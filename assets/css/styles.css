@@ -236,6 +236,8 @@ the website, in dark theme
   cursor: pointer;
 }
 
+
+
 @media screen and (max-width: 767px){
   .nav__menu{
     position: fixed;
@@ -274,6 +276,97 @@ the website, in dark theme
 
 .nav__link:hover{
   color: var(--text-color);
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 0px 5px;
+  padding-top: 5px;
+}
+
+.switch > span {
+  position: absolute;
+  top: 11px;
+  pointer-events: none;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+  width: 50%;
+  text-align: center;
+}
+
+input.check-toggle-round-flat:checked ~ .off {
+  color: var(--title-color);
+}
+
+input.check-toggle-round-flat:checked ~ .on {
+  color: var(--text-color);
+}
+
+.switch > span.on {
+  left: 0;
+  padding-left: 0px;
+  color: var(--title-color);
+}
+
+.switch > span.off {
+  right: 0;
+  padding-right: 0px;
+  color: var(--text-color);
+}
+
+.check-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.check-toggle + label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+input.check-toggle-round-flat + label {
+  padding: 0px;
+  width: 52px;
+  height: 22px;
+  background-color: var(--text-color);
+  border-radius: 60px;
+}
+input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+}
+
+input.check-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: var(--title-color);
+  border-radius: 22px;
+} 
+input.check-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 18px;
+  background-color: var(--text-color);
+  border-radius: 20px;
+  transition: margin 0.2s;
+}
+
+
+
+input.check-toggle-round-flat:checked + label:after {
+  margin-left: 26px;
 }
 
 /* Show menu */
@@ -923,7 +1016,7 @@ the website, in dark theme
 
   .nav{
     height: calc(var(--header-height) + 1.5rem);
-    column-gap: 3rem;
+    column-gap: 2rem;
   }
   .nav__toggle,
   .nav__close{
