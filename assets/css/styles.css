@@ -576,6 +576,12 @@ input.check-toggle-round-flat:checked + label:after {
   transition: .3s;
 }
 
+.steps__card-number img{
+ 
+  border-radius: 1rem;
+
+}
+
 .steps__card-title{
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-5);
@@ -1094,7 +1100,7 @@ input.check-toggle-round-flat:checked + label:after {
   }
 
   .steps__container{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   .steps__bg{
     padding: 3.5rem 2.5rem;
