@@ -419,7 +419,6 @@ document.getElementById("form-actions").addEventListener("submit", function (eve
 
 // Google translate
 
-
 // Read more and read less from our team
 $(document).ready(function(){
     $(".read").click(function(){

@@ -201,9 +201,9 @@ the website, in dark theme
 .header{
   width: 100%;
   background-color: var(--body-color);
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
+  /* top: 0;
+  left: 0; */
   z-index: var(--z-fixed);
   transition: .4s; /*For animation dark mode*/
 }
@@ -250,6 +250,11 @@ the website, in dark theme
 
 
 @media screen and (max-width: 767px){
+
+  .header {
+    margin-top: -40px;
+  }  
+
   .nav__menu{
     position: fixed;
     background-color: var(--body-color);
@@ -258,7 +263,7 @@ the website, in dark theme
     top: 0;
     right: -100%;
     box-shadow: -2px 0 4px var(--text-color);
-    padding: 4rem 0 0 3rem;
+    padding: 7rem 0 0 3rem;
     border-radius: 1rem 0 0 1rem;
     transition: .3s;
     z-index: var(--z-fixed);
@@ -268,7 +273,7 @@ the website, in dark theme
 .nav__close{
   font-size: 1.5rem;
   position: absolute;
-  top: 1rem;
+  top: 3rem;
   right: 1.25rem;
   cursor: pointer;
 }
@@ -1823,7 +1828,7 @@ textarea.input {
 
 .goog-te-combo {
   width: 130px;
-  margin-top: 14px !important;
+  /* margin-top: 14px !important; */
 }
 
 .goog-te-gadget span {
