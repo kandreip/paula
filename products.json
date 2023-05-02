@@ -1,0 +1,31 @@
+{
+    "jobs": [
+        {
+            "id": 0,
+            "job": "OPERATOR CALITATE FLUX",
+            "location": "SIBIU",
+            "requirements": "<ul><li>Absolvent de studii gimnaziale (8 clase)</li> <li>Atentie la detalii</li> <li>Acuitate vizuala</li> <li>Experienta in domeniul calitatii reprezinta un avantaj</li> </ul>",
+            "description": "<ul><li>Controlul reperelor din punct de vedere al calitatii</li><li>Respingerea pieselor care nu indeplinesc standardele de calitate</li><li>Intocmirea rapoartelor de lucru</li></ul>",
+            "benefits": "<ul><li>Pachet salarial adaptat si motivant</li><li>Prime de sarbatori</li><li>Spor de noapte 25%</li><li>Bonus lunar de performanta</li><li>Transport asigurat/decontat</li><li>Asigurare de sanatate full</li><li>Conditii bune de munca</li></ul>",
+            "icon": "fas fa-hard-hat"
+        },
+        {
+            "id": 1,
+            "job": "Patiser",
+            "location": "Sebes",
+            "requirements": "Diploma",
+            "description": "Descriere",
+            "benefits": "Beneficii",
+            "icon": "fas fa-hard-hat"
+        },
+        {
+            "id": 2,
+            "job": "Patiser",
+            "location": "Sebes",
+            "requirements": "Diploma",
+            "description": "Descriere",
+            "benefits": "Beneficii",
+            "icon": "fas fa-hard-hat"
+        }
+    ]
+}
