@@ -424,10 +424,10 @@ $(document).ready(function(){
     $(".read").click(function(){
        $(this).prev().toggle();
        $(this).siblings('.dots').toggle();
-       if($(this).text()=='mai mult'){
-        $(this).text('mai putin');
+       if($(this).text()=='>>>'){
+        $(this).text('<<<');
        } else{
-        $(this).text('mai mult');
+        $(this).text('<<<');
        }
     });
  });
