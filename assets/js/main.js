@@ -427,7 +427,7 @@ $(document).ready(function(){
        if($(this).text()=='>>>'){
         $(this).text('<<<');
        } else{
-        $(this).text('<<<');
+        $(this).text('>>>');
        }
     });
  });
