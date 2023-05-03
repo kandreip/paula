@@ -91,6 +91,11 @@ body{
   transition: .4s; /*For animation dark mode*/
 }
 
+footer {
+  /* background-color: var(--body-color); */
+  color: var(--text-color);
+}
+
 button{
   cursor: pointer;
   border: none;
@@ -828,6 +833,7 @@ input.check-toggle-round-flat:checked + label:after {
   8px 8px 8px 0 rgba(255, 255, 255, 0.3);
   padding: 0px;
   border-radius: 20px;
+  min-width: 225px;
 }
 
 .product__img{
@@ -1101,9 +1107,10 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 /*=============== FOOTER ===============*/
-/* .footer{
-  background-color: var(--container-color);
-} */
+.footer{
+  background-color: #f1f1f1;
+  color: #193451;
+}
 
 .footer__container{
   row-gap: 3rem;
@@ -1133,18 +1140,18 @@ input.check-toggle-round-flat:checked + label:after {
 .footer__title{
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1-5);
-  color: var(--third-color);
+  color: var(--text-color)
 }
 
 .footer__data{
   display: grid;
   row-gap: .75rem;
-  color: var(--third-color);
+  color: var(--text-color)
 }
 
 .footer__information{
   font-size: var(--small-font-size);
-  color: var(--third-color);
+  color: var(--text-color);
 }
 
 .footer__social{
@@ -1154,7 +1161,7 @@ input.check-toggle-round-flat:checked + label:after {
 
 .footer__social-link{
   font-size: 1rem;
-  color: var(--third-color);
+  color: --text-color;
   transition: .3s;
 }
 
