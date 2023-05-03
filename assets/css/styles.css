@@ -173,6 +173,7 @@ the website, in dark theme
 
 .section__title-center{
   text-align: center;
+  color: var(--text-color);
 }
 
 .container{
@@ -264,6 +265,26 @@ the website, in dark theme
     transition: .3s;
     z-index: var(--z-fixed);
   }
+
+  .about__data {
+    padding: 0 20px;
+  }
+
+  .job__details-pop-up, .job__apply, .conf-pop-up {
+    width: 90% !important;
+    margin: 0 5% !important;
+  }
+
+  .job__details-pop-up-main, #form-actions {
+    height: 80vh;
+    overflow-y: auto;
+  }
+
+  .product__card {
+    width: 90%;
+    margin: 0 5%;
+  }
+
 }
 
 .nav__close{
@@ -790,6 +811,7 @@ input.check-toggle-round-flat:checked + label:after {
 /*=============== PRODUCTS ===============*/
 .product__description{
   text-align: center;
+  color: var(--text-color);
 }
 
 .product__container{
