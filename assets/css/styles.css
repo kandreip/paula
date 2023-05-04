@@ -199,6 +199,11 @@ the website, in dark theme
   justify-content: space-between;
 }
 
+.steps__img {
+  width: 200px;
+  margin: 0 auto 30px;
+}
+
 .main{
   overflow: hidden; /*For animation*/
 }
@@ -452,6 +457,7 @@ input.check-toggle-round-flat:checked + label:after {
 .home__logo{
   width: 60px;
   height: 60px;
+  padding: 10px;
 }
 
 .home__title{
@@ -708,6 +714,10 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 /*=============== ABOUT ===============*/
+.about{
+  padding: 13rem 1rem 18rem;
+}
+
 .about__container{
   row-gap: 2rem;
   color: var(--text-color);
@@ -747,6 +757,10 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 /*=============== STEPS ===============*/
+.steps {
+  padding: 9.5rem 1rem;
+}
+
 .steps__bg{
   background-color: var(--container-color);
   padding: 3rem 2rem 2rem;
@@ -814,6 +828,10 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 /*=============== PRODUCTS ===============*/
+.product {
+  padding: 9.5rem 1rem;
+}
+
 .product__description{
   text-align: center;
   color: var(--text-color);
@@ -1012,6 +1030,10 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 /*=============== CONTACT ===============*/
+.contact{
+  padding: 12.5rem 1rem 15rem;
+}
+
 .contact__container{
   row-gap: 3.5rem;
 }
@@ -1333,9 +1355,9 @@ input.check-toggle-round-flat:checked + label:after {
     margin-right: auto;
   }
 
-  .section{
+  /* .section{
     padding: 13rem 0 8rem;
-  }
+  } */
 
   /* .about {
     padding: 16rem 2rem 8rem;
