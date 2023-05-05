@@ -185,6 +185,7 @@ function jobDetails () {
         const detailsBtn = document.querySelectorAll('.product__button1');
         const jobDetails = document.querySelector('#job__details-pop-up-main');
         const jobPopUp = document.querySelector('.job__details-pop-up');
+        const modal = document.querySelector('.modal')
     
         for (let i=0; i < detailsBtn.length; i++) {
     
@@ -224,8 +225,9 @@ function jobDetails () {
     
                 // getHeader.classList.add('hide');
                 // getMain.classList.add('hide');
-                document.body.classList.add('overlay');
+                // document.body.classList.add('overlay');
                 jobPopUp.classList.remove('hide');
+                modal.classList.remove('hide');
                 console.log(jobDetails);
 
 
@@ -322,10 +324,12 @@ closeIconApply.addEventListener('click', () =>{
 // Close Details Pop-Up
 const closeIcon = document.querySelector('.js-job__details-pop-up-close');
 const jobPopUp = document.querySelector('.job__details-pop-up');
+const modal = document.querySelector('.modal');
 
 function closePopUp () {
     document.body.classList.remove('overlay');
     jobPopUp.classList.add('hide');
+    modal.classList.add('hide');
 }
 
 closeIcon.addEventListener('click', () =>{
@@ -431,8 +435,6 @@ $(document).ready(function(){
        }
     });
  });
-
-
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
