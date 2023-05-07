@@ -228,7 +228,7 @@ function jobDetails () {
                 // document.body.classList.add('overlay');
                 jobPopUp.classList.remove('hide');
                 modal.classList.remove('hide');
-                console.log(jobDetails);
+                // console.log(jobDetails);
 
 
                 // Job Details - Apply button
@@ -236,7 +236,7 @@ function jobDetails () {
                     const applyBtns = document.querySelectorAll('.js-job__details-apply-btn');
                     const getDetailsJob = document.querySelector('.job__details-pop-up')
                     const getApplyForm = document.querySelector('.job__apply');
-                    console.log(applyBtns.length)
+                    // console.log(applyBtns.length)
 
                     for (let i=0; i < applyBtns.length; i++) {
             
@@ -264,8 +264,8 @@ function jobDetails () {
                 for (let i=0; i < applyBtns.length; i++) {
         
                     applyBtns[i].addEventListener('click', () =>{
-                        console.log(applyBtns.length)
-                        document.body.classList.add('overlay');
+                        // console.log(applyBtns.length)
+                        // document.body.classList.add('overlay');
                         getApplyForm.classList.remove('hide');
             
                     })
@@ -288,14 +288,17 @@ function applyJob () {
         // Generate job details window
         const applyBtns = document.querySelectorAll('.js-product__card-apply-btn');
         const getApplyForm = document.querySelector('.job__apply');
+        const modalApplyForm = document.querySelector('.modal')
+        
         
     
         for (let i=0; i < applyBtns.length; i++) {
     
             applyBtns[i].addEventListener('click', () =>{
-                console.log(applyBtns.length)
-                document.body.classList.add('overlay');
+                // console.log(applyBtns.length)
+                // document.body.classList.add('overlay');
                 getApplyForm.classList.remove('hide');
+                modalApplyForm.classList.remove('hide')
     
             })
         }
@@ -309,10 +312,12 @@ applyJob ();
 // Close Apply
 const closeIconApply = document.querySelector('.js-job__apply-close');
 const jobApplyPopUp = document.querySelector('.job__apply');
+const modalApplyPopUp = document.querySelector('.modal')
 
 function closeApplyPopUp () {
-    document.body.classList.remove('overlay');
+    // document.body.classList.remove('overlay');
     jobApplyPopUp.classList.add('hide');
+    modalApplyPopUp.classList.add('hide')
 }
 
 closeIconApply.addEventListener('click', () =>{
@@ -327,7 +332,7 @@ const jobPopUp = document.querySelector('.job__details-pop-up');
 const modal = document.querySelector('.modal');
 
 function closePopUp () {
-    document.body.classList.remove('overlay');
+    // document.body.classList.remove('overlay');
     jobPopUp.classList.add('hide');
     modal.classList.add('hide');
 }
@@ -340,10 +345,12 @@ closeIcon.addEventListener('click', () =>{
 // Close data protection
 const closeIconData = document.querySelector('.js-conf-pop-up-close');
 const jobPopUpData = document.querySelector('.conf-pop-up');
+const modalPopUpData = document.querySelector('.modal');
 
 function closePopUpData () {
-    document.body.classList.remove('overlay');
+    // document.body.classList.remove('overlay');
     jobPopUpData.classList.add('hide');
+    modalPopUpData.classList.add('hide');
 }
 
 closeIconData.addEventListener('click', () =>{
@@ -353,28 +360,17 @@ closeIconData.addEventListener('click', () =>{
 // Open data protection
 const openIconsData = document.querySelectorAll('.js-data-protection');
 const confPopUpData = document.querySelector('.conf-pop-up');
-console.log(openIconsData)
+// const modalPopUpData = document.querySelector('.modal')
+// console.log(openIconsData)
 
-function test () {
-    console.log('test')
+function openPopUpData () {
+    // document.body.classList.remove('overlay');
+    jobPopUpData.classList.remove('hide');
+    modalPopUpData.classList.remove('hide');
 }
-
 openIconsData.forEach((openIconData) => {
-    console.log(openIconsData.value)
-    // console.log('aaaaaaaa')
-    // openIconData.addEventListener("click", () => {
-    //     console.log('test')
-    // });
-    openIconData.addEventListener("click", test);
+    openIconData.addEventListener("click", openPopUpData);    
 })
-
-
-// $('.js-data-protection').click(function () {
-//     var storyId = $(this).find("a[href]").attr('href');
-//     console.log(storyId);
-// });
-
-
 
 //Contact form
 const inputs = document.querySelectorAll(".input");

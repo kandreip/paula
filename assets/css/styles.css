@@ -530,7 +530,7 @@ input.check-toggle-round-flat:checked + label:after {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,1); /* Black w/ opacity */
+  background-color: #193451; /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
@@ -601,19 +601,17 @@ input.check-toggle-round-flat:checked + label:after {
 
 .conf-pop-up{
   width: 80%;
-  min-height: 600px;
-  /* width: 60%; */
-  
+  min-height: 600px;  
   border-radius: 10px;
-  /* position: fixed;
-  z-index: 200; */
   margin-left: 10%;
   margin-right: 10%;
-  /* top: 100px; */
   background-color: #ffffff;
   color: var(--first-color-alt);
   max-height: calc(100vh - 200px);
   overflow-y: auto;
+  position: fixed;
+  z-index: 201;
+  top: 100px;
 }
 
 .conf-pop-up-main  {
@@ -1580,7 +1578,7 @@ input.check-toggle-round-flat:checked + label:after {
 } */
 
 form {
-  padding: 0 2.2rem 2.3rem;
+  padding: 3rem 2.2rem;
   z-index: 10;
   overflow: hidden;
   position: relative;
@@ -1811,6 +1809,20 @@ textarea.input {
   left: 50%;
   transform: translate(181%, 11%);
   opacity: 0.2;
+}
+
+.checkbox{
+  display: flex;
+  align-items: flex-start;
+}
+
+#checkbox{
+  margin-top: 6px;
+}
+
+.checkbox-text{
+  margin-left: 10px;
+  color: #ffffff;
 }
 
 
