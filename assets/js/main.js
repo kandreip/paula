@@ -177,6 +177,19 @@ function insertProducts () {
 
 insertProducts ();
 
+// Pagination
+$('.page-2').hide();
+$('.page-1-btn,.page-2-btn').click(function(){
+    $('.page-1,.page-2').toggle();
+    $('.page-1-btn,.page-2-btn').toggleClass('active');
+    insertProducts();
+});
+
+// Adding jobs when click on menu tab - jobs
+$('.js-nav-item-job').click(function(){
+    insertProducts();
+})
+
 
 function jobDetails () {
     setTimeout(() => {
@@ -346,16 +359,27 @@ closeIcon.addEventListener('click', () =>{
 const closeIconData = document.querySelector('.js-conf-pop-up-close');
 const jobPopUpData = document.querySelector('.conf-pop-up');
 const modalPopUpData = document.querySelector('.modal');
+const closeBtnData = document.querySelector('.js-conf-pop-up-close-btn');
 
 function closePopUpData () {
     // document.body.classList.remove('overlay');
     jobPopUpData.classList.add('hide');
-    modalPopUpData.classList.add('hide');
+    if ($('.job__apply').hasClass('hide')) {
+        modalPopUpData.classList.add('hide');
+    } else {
+        modalPopUpData.classList.remove('hide');
+    }
+    // modalPopUpData.classList.add('hide');
 }
 
 closeIconData.addEventListener('click', () =>{
     closePopUpData();
 })
+
+closeBtnData.addEventListener('click', () =>{
+    closePopUpData();
+})
+
 
 // Open data protection
 const openIconsData = document.querySelectorAll('.js-data-protection');

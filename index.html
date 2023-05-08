@@ -139,6 +139,9 @@
                     
                     
                 </div>
+                <div class="conf-pop-up-close-btn js-conf-pop-up-close-btn">
+                    <button class="button button--flex">Inchide</button>
+                </div>
             </div>
 
             <div class="job__apply hide">
@@ -178,7 +181,7 @@
                       </div>
                      
                     </div>
-                    <input type="submit" value="Send" class="btn" id="btn"/>
+                    <input type="submit" value="Trimite" class="btn" id="btn"/>
                   </form>
             </div>
         
@@ -199,7 +202,7 @@
                         <li class="nav__item">
                             <a href="#steps" class="nav__link">Echipa</a>
                         </li>
-                        <li class="nav__item">
+                        <li class="nav__item js-nav-item-jobs">
                             <a href="#products" class="nav__link">Joburi</a>
                         </li>
                         <li class="nav__item">
@@ -456,14 +459,25 @@
                     Joburi
                 </h2>
 
-                <p class="product__description">
+                <!-- <p class="product__description">
                     O mica introducere.
-                </p>
+                </p> -->
 
-                <div class="product__container grid">
+                <div class="product__container grid page-1">
+                    <article class="product__card"></article>
+                    <article class="product__card"></article>
+                    <article class="product__card"></article>   
+                </div>
+                <div class="product__container grid page-2">
                     <article class="product__card"></article>
                     <article class="product__card"></article>
                     <article class="product__card"></article>               
+                </div>
+
+                <div class="pagination" id=""pagination>
+                    <a href="#pagination" class="page-1-btn active">1</a>
+                    <a href="#pagination" class="page-2-btn">2</a>
+
                 </div>
 
                 
@@ -700,7 +714,7 @@
                             </div>
                            
                           </div>
-                          <input type="submit" value="Send" class="btn" id="btn"/>
+                          <input type="submit" value="Trimite" class="btn" id="btn"/>
                         </form>
                       </div>
 
