@@ -970,25 +970,36 @@ input.check-toggle-round-flat:checked + label:after {
   text-align: center;
 }
 
+.product__buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
 .product__button1{
-  position: absolute;
+  /* position: absolute;
   left: 10px;
-  bottom: 20px;
+  bottom: 20px; */
+  margin: 0 auto 20px;
   background-color: var(--first-color);
   color: var(--third-color);
   padding: .25rem 1rem;
   border-radius: .35rem;
   font-size: 1.15rem;
+  border: 2px solid var(--text-color);
 }
 .product__button2{
-  position: absolute;
+  /* position: absolute;
   right: 10px;
-  bottom: 20px;
+  bottom: 20px; */
+  margin: 0 auto 20px;
   background-color: var(--first-color);
   color: var(--third-color);
   padding: .25rem 1rem;
   border-radius: .35rem;
   font-size: 1.15rem;
+  border: 2px solid var(--text-color);
 }
 
 .product__button1:hover, 

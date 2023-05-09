@@ -182,9 +182,10 @@ function insertProducts (data) {
                         <h3 class="product__title">${f.job}</h3>
                         <p class="product__card_location"><i class="fas fa-map-marker-alt"> ${f.location}</i> </p>
                         <p class="product__card_description"><i class="fas fa-list-ul"></i> </p>
-                        <button class="button--flex product__button1" id=${f.id}>Detalii</button>
-                        <button class="button--flex product__button2 js-product__card-apply-btn" id=${f.id}>Aplica</button>
-                   
+                        <div class="product__buttons">
+                        <button class="product__button1" id=${f.id}>Detalii</button>
+                        <button class="product__button2 js-product__card-apply-btn" id=${f.id}>Aplica</button>
+                        </div>    
                 `
             }
         })
