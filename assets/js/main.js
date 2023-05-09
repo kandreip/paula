@@ -148,12 +148,28 @@ themeButton.addEventListener('click', () => {
 /*=============== Functionality ===============*/
 // Insert products to html from json file
 
-function insertProducts () {
-    var jobs = [];
-    const getId = document.querySelectorAll(".product__card");
-    // console.log(getId);
 
-    $.getJSON("products.json", function (data) {
+async function populate() {
+
+    const requestURL = 'products.json';
+    const request = new Request(requestURL);
+  
+    const response = await fetch(request);
+    const jobs = await response.json();
+  
+    insertProducts(jobs);
+    jobDetails();
+    applyJob();
+  
+  }
+
+populate()
+
+
+function insertProducts (data) {
+    const getId = document.querySelectorAll(".product__card");
+
+    // $.getJSON("products.json", function (data) {
 
         $.each(data.jobs, function (i,f) {
 
@@ -172,23 +188,55 @@ function insertProducts () {
                 `
             }
         })
-    })
+    // })
 }
 
-insertProducts ();
+// insertProducts ();
+
+// function insertProducts () {
+//     var jobs = [];
+//     const getId = document.querySelectorAll(".product__card");
+//     console.log(getId);
+
+//     $.getJSON("products.json", function (data) {
+
+//         $.each(data.jobs, function (i,f) {
+
+//             for (let j=0; j <= i; j++) {
+
+
+//                 getId[i].innerHTML = ` 
+                    
+//                         <i class="${f.icon}"></i>
+//                         <h3 class="product__title">${f.job}</h3>
+//                         <p class="product__card_location"><i class="fas fa-map-marker-alt"> ${f.location}</i> </p>
+//                         <p class="product__card_description"><i class="fas fa-list-ul"></i> </p>
+//                         <button class="button--flex product__button1" id=${f.id}>Detalii</button>
+//                         <button class="button--flex product__button2 js-product__card-apply-btn" id=${f.id}>Aplica</button>
+                   
+//                 `
+//             }
+//         })
+//     })
+// }
+
+// insertProducts ();
 
 // Pagination
 $('.page-2').hide();
 $('.page-1-btn,.page-2-btn').click(function(){
     $('.page-1,.page-2').toggle();
     $('.page-1-btn,.page-2-btn').toggleClass('active');
-    insertProducts();
+    // insertProducts();
+    populate();
 });
 
 // Adding jobs when click on menu tab - jobs
 $('.js-nav-item-job').click(function(){
-    insertProducts();
+    // insertProducts();
+    populate();
 })
+
 
 
 function jobDetails () {
@@ -292,8 +340,6 @@ function jobDetails () {
     }, "1000")
 }
 
-jobDetails();
-
 
 function applyJob () {
     setTimeout(() => {
@@ -317,9 +363,6 @@ function applyJob () {
         }
     }, "2000")
 }
-
-
-applyJob ();
 
 
 // Close Apply
@@ -470,4 +513,4 @@ sr.reveal(`.home__img`, {delay: 500})
 sr.reveal(`.home__social`, {delay: 600})
 sr.reveal(`.about__img, .contact__box`,{origin: 'left'})
 sr.reveal(`.about__data, .contact__form`,{origin: 'right'})
-sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 100})
+sr.reveal(`.steps__card, .questions__group, .footer`,{interval: 100})
