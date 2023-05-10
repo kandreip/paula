@@ -988,6 +988,7 @@ input.check-toggle-round-flat:checked + label:after {
   border-radius: .35rem;
   font-size: 1.15rem;
   border: 2px solid var(--text-color);
+  height: 39px;
 }
 .product__button2{
   /* position: absolute;
@@ -1000,6 +1001,7 @@ input.check-toggle-round-flat:checked + label:after {
   border-radius: .35rem;
   font-size: 1.15rem;
   border: 2px solid var(--text-color);
+  height: 39px;
 }
 
 .product__button1:hover, 
@@ -1266,6 +1268,10 @@ input.check-toggle-round-flat:checked + label:after {
 .footer__information{
   font-size: var(--small-font-size);
   color: var(--text-color);
+}
+
+.footer__information:hover{
+  cursor: pointer;
 }
 
 .footer__social{
