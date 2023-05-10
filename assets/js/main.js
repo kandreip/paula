@@ -498,6 +498,15 @@ $(document).ready(function(){
         $(this).text('>>>');
        }
     });
+
+// Send button active after checkbox was checked
+
+    // $('#btn').attr("disabled", true);
+    
+    // $('#checkbox').change(function() {
+    //     $('#btn').attr('disabled', $('#btn:checked').length == 0);
+    // });
+
  });
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
