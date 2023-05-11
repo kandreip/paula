@@ -1281,7 +1281,7 @@ input.check-toggle-round-flat:checked + label:after {
 
 .footer__social-link{
   font-size: 1rem;
-  color: --text-color;
+  color: var(--text-color);
   transition: .3s;
 }
 
