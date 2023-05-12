@@ -487,6 +487,9 @@ document.getElementById("form-actions").addEventListener("submit", function (eve
 
 // Google translate
 
+// Send button active after checkbox was checked
+
+
 // Read more and read less from our team
 $(document).ready(function(){
     $(".read").click(function(){
@@ -501,11 +504,11 @@ $(document).ready(function(){
 
 // Send button active after checkbox was checked
 
-    // $('#btn').attr("disabled", true);
-    
-    // $('#checkbox').change(function() {
-    //     $('#btn').attr('disabled', $('#btn:checked').length == 0);
-    // });
+    $(function(){
+        $(".checkbox").change(function() {
+          $(".btn").toggleClass("disabled", this.checked)
+        }).change();
+      });
 
  });
 

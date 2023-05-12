@@ -209,6 +209,11 @@ the website, in dark theme
   overflow: hidden; /*For animation*/
 }
 
+.disabled{
+  pointer-events: none;
+  opacity: 0.4;
+}
+
 /*=============== HEADER ===============*/
 .header{
   width: 100%;
@@ -485,7 +490,7 @@ input.check-toggle-round-flat:checked + label:after {
 .home__social{
   position: absolute;
   top: 2rem;
-  right: -3rem;
+  right: -2rem;
   display: grid;
   justify-items: center;
   row-gap: 3.5rem;
@@ -1781,7 +1786,7 @@ textarea.input {
 }
 
 .contact-info .title {
-  color: #1abc9c;
+  color: var(--second-color)
 }
 
 .text {
