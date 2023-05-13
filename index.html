@@ -155,7 +155,7 @@
                     <h3 class="title">Aplica</h3>
                     <div class="input-container job__apply-job">
                         <input type="text" name="job" class="input" id="job"/>
-                        <label for="job"></label>
+                        <label for="job" style="display: none;">Job</label>
                         <!-- <span>Job</span> -->
                       </div>
                     <div class="input-container">
@@ -179,7 +179,8 @@
                       <span>Mesajul dumneavoastra</span>
                     </div>
                     <div class="input-container checkbox">
-                      <input type="checkbox" id="checkbox" class="checkbox" name="horns">
+                      <label id="checkbox-label2" for="checkbox2" style="display: none;">Checkbox</label>
+                      <input type="checkbox" id="checkbox2" class="checkbox" name="horns">
                       <div class="checkbox-text">Sunt de acord cu <p class="js-data-protection" >politica de prelucrare a datelor cu caracter personal.</p> 
                       </div>
                      
@@ -504,16 +505,16 @@
                     O mica introducere.
                 </p> -->
 
-                <section class="product__container grid page-1">
+                <div class="product__container grid page-1">
                     <article class="product__card"></article>
                     <article class="product__card"></article>
                     <article class="product__card"></article>   
-                </section>
-                <section class="product__container grid page-2">
+                </div>
+                <div class="product__container grid page-2">
                     <article class="product__card"></article>
                     <article class="product__card"></article>
                     <article class="product__card"></article>               
-                </section>
+                </div>
 
                 <div class="pagination" id="pagination">
                     <a href="#pagination" class="page-1-btn active">1</a>
@@ -750,6 +751,7 @@
                             <span>Mesajul dumneavoastra</span>
                           </div>
                           <div class="input-container checkbox">
+                            <label id="checkbox-label" for="checkbox" style="display: none;">Checkbox</label>
                             <input type="checkbox" id="checkbox" class="checkbox" name="horns">
                             <div class="checkbox-text">Sunt de acord cu <p class="js-data-protection" >politica de prelucrare a datelor cu caracter personal.</p> 
                             </div>
