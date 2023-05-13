@@ -810,7 +810,7 @@ input.check-toggle-round-flat:checked + label:after {
 .about__details-description{
   display: inline-flex;
   column-gap: .5rem;
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size)
 }
 
 .about__details-icon{
