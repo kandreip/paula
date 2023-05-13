@@ -477,7 +477,7 @@ input.check-toggle-round-flat:checked + label:after {
 
 .home__title{
   font-size: var(--big-font-size);
-  line-height: 140%;
+  line-height: 165%;
   margin-bottom: var(--mb-1);
   color: var(--text-color);
 }
@@ -777,7 +777,7 @@ input.check-toggle-round-flat:checked + label:after {
 
 /*=============== ABOUT ===============*/
 .about{
-  padding: 13rem 1rem 18rem;
+  padding: 8rem 1rem 18rem;
 }
 
 .about__container{
@@ -789,6 +789,7 @@ input.check-toggle-round-flat:checked + label:after {
 .about__img{
   width: 280px;
   justify-self: center;
+  margin-top: unset;
 }
 
 .about__title{
@@ -1484,7 +1485,7 @@ input.check-toggle-round-flat:checked + label:after {
   }
 
   .home{
-    padding: 16rem 0 5rem;
+    padding: 18rem 0 5rem;
   }
   .home__img{
     width: 350px;
@@ -1495,6 +1496,7 @@ input.check-toggle-round-flat:checked + label:after {
 
   .about__img{
     width: 380px;
+    margin-top: 38%;
   }
 
   .steps__bg{
