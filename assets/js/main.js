@@ -267,14 +267,17 @@ function jobDetails () {
                                 <p>Locatie</p>
                                 ${data.jobs[detailsBtn[i].id].location}
                                 </div>
-                                <div class="job__details-description">
-                                <p>Descriere</p>
-                                ${data.jobs[detailsBtn[i].id].description}
-                                </div>
+                                
                                 <div class="job__details-requirements">
                                 <p>Cerinte</p>
                                 ${data.jobs[detailsBtn[i].id].requirements}
                                 </div>
+
+                                <div class="job__details-description">
+                                <p>Responsabilitati</p>
+                                ${data.jobs[detailsBtn[i].id].responsabilities}
+                                </div>
+
                                 <div class="job__details-benefits">
                                 <p>Beneficii</p>
                                 ${data.jobs[detailsBtn[i].id].benefits}
