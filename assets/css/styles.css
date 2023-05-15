@@ -22,6 +22,19 @@
   --text-color: #193451;
   --body-color: var(--third-color);
 
+  --nav-bg-color: #f1f1f1;
+  --home-bg-color: #f1f1f1;
+  --about-bg-color: #ffffff;
+  --steps-bg-color: #f1f1f1;
+  --products-bg-color: #ffffff;
+  --contact-bg-color: #f1f1f1;
+  --footer-bg-contact:#ffffff;
+
+  --main-color: #193451;
+
+
+
+
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -129,6 +142,16 @@ body.dark-theme{
   --title-color: #193451;
   --text-color: #f1f1f1;
   --container-color: #001e3e;
+
+  --nav-bg-color: #193451;
+  --home-bg-color: #193451;
+  --about-bg-color: #001e3e;
+  --steps-bg-color: #193451;
+  --products-bg-color: #001e3e;
+  --contact-bg-color: #193451;
+  --footer-bg-contact:#001e3e;
+
+  --main-color: #f1f1f1;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -217,7 +240,7 @@ the website, in dark theme
 /*=============== HEADER ===============*/
 .header{
   width: 100%;
-  background-color: var(--body-color);
+  background-color: var(--nav-bg-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -236,7 +259,7 @@ the website, in dark theme
 .nav__logo,
 .nav__toggle,
 .nav__close{
-  color: var(--text-color);
+  color: var(--main-color);
 }
 
 .nav__logo{
@@ -251,11 +274,11 @@ the website, in dark theme
 
 .nav__logo-icon{
   font-size: 1.15rem;
-  color: var(--text-color);
+  color: var(--main-color)
 }
 
 .nav__logo:hover{
-  color: var(--text-color);
+  color: var(--main-color);
 }
 
 .nav__toggle{
@@ -270,12 +293,12 @@ the website, in dark theme
 
   .nav__menu{
     position: fixed;
-    background-color: var(--body-color);
+    background-color: var(--nav-bg-color);
     width: 80%;
     height: 100%;
     top: 0;
     right: -100%;
-    box-shadow: -2px 0 4px var(--text-color);
+    box-shadow: -2px 0 4px var(--main-color);
     padding: 7rem 0 0 3rem;
     border-radius: 1rem 0 0 1rem;
     transition: .3s;
@@ -327,13 +350,13 @@ the website, in dark theme
 
 
 .nav__link{
-  color: var(--text-color);
+  color: var(--main-color);
   font-weight: var(--font-medium);
   transition: .3s;
 }
 
 .nav__link:hover{
-  color: var(--text-color);
+  color: var(--main-color);
 }
 
 
@@ -457,6 +480,7 @@ input.check-toggle-round-flat:checked + label:after {
 .home{
   padding: 3.5rem 0 2rem;
   height: 100vh;
+  background-color: var(--home-bg-color);
 }
 
 .home__container{
@@ -479,12 +503,12 @@ input.check-toggle-round-flat:checked + label:after {
   font-size: var(--big-font-size);
   line-height: 165%;
   margin-bottom: var(--mb-1);
-  color: var(--text-color);
+  color: var(--main-color);
 }
 
 .home__description{
   margin-bottom: var(--mb-2-5);
-  color: var(--text-color);
+  color: var(--main-color);
 }
 
 .home__social{
@@ -499,7 +523,7 @@ input.check-toggle-round-flat:checked + label:after {
 .home__social-follow{
   font-weight: var(--font-medium);
   font-size: var(--smaller-font-size);
-  color: var(--text-color);
+  color: var(--main-color);
   position: relative;
   transform: rotate(90deg);
 }
@@ -509,7 +533,7 @@ input.check-toggle-round-flat:checked + label:after {
   position: absolute;
   width: 1rem;
   height: 2px;
-  background-color: var(--text-color);
+  background-color: var(--main-color);
   right: -45%;
   top: 50%;
 }
@@ -522,7 +546,7 @@ input.check-toggle-round-flat:checked + label:after {
 
 .home__social-link{
   font-size: 1rem;
-  color: var(--text-color);
+  color: var(--main-color);
   transition: .3s;
 }
 
@@ -764,7 +788,9 @@ input.check-toggle-round-flat:checked + label:after {
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;
-  border: 2px solid var(--text-color);
+  border: none;
+  background-color: #f25539;
+  color: #ffffff;
 }
 
 .button--link{
@@ -778,6 +804,7 @@ input.check-toggle-round-flat:checked + label:after {
 /*=============== ABOUT ===============*/
 .about{
   padding: 8rem 1rem 18rem;
+  background-color: var(--about-bg-color);
 }
 
 .about__container{
@@ -822,6 +849,7 @@ input.check-toggle-round-flat:checked + label:after {
 /*=============== STEPS ===============*/
 .steps {
   padding: 9.5rem 1rem;
+  background-color: var(--steps-bg-color);
 }
 
 .steps__bg{
@@ -893,6 +921,7 @@ input.check-toggle-round-flat:checked + label:after {
 /*=============== PRODUCTS ===============*/
 .product {
   padding: 9.5rem 1rem;
+  background-color: var(--products-bg-color);
 }
 
 .product__description{
@@ -1034,7 +1063,7 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .pagination a {
-  color: #ffffff;
+  color: var(--main-color);
   float: left;
   padding: 8px 16px;
   text-decoration: none;
@@ -1044,16 +1073,16 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .pagination a.active {
-  background-color: #193451;
-  color: white;
-  border: 2px solid #ffffff;
+  background-color: var(--contact-bg-color);
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
   border-radius: 5px;
 }
 
 .pagination a:hover:not(.active) {
-  background-color: #ddd;
+  background-color: var(--contact-bg-color);
   border-radius: 5px;
-  color: #193451;
+  color: var(--main-color);
 }
 
 /*=============== QUESTIONS ===============*/
@@ -1137,6 +1166,7 @@ input.check-toggle-round-flat:checked + label:after {
 /*=============== CONTACT ===============*/
 .contact{
   padding: 12.5rem 1rem 15rem;
+  background-color: var(--contact-bg-color);
 }
 
 .contact__container{
@@ -1235,7 +1265,7 @@ input.check-toggle-round-flat:checked + label:after {
 
 /*=============== FOOTER ===============*/
 .footer{
-  background-color: #f1f1f1;
+  background-color: var(--footer-bg-contact);
   color: #193451;
 }
 
@@ -1312,7 +1342,7 @@ input.check-toggle-round-flat:checked + label:after {
 .footer__copy{
   text-align: center;
   font-size: var(--smaller-font-size);
-  color: var(--third-color);
+  color: var(--main-color);
   margin: 5rem 0 1rem;
 }
 

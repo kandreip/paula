@@ -466,26 +466,26 @@ inputs.forEach((input) => {
 // EmailJs
 
 // listen to the form submission
-const btn = document.getElementById('btn');
+// const btn = document.getElementById('btn');
 
-document.getElementById("form-actions").addEventListener("submit", function (event) {
-          event.preventDefault();
+// document.getElementById("form-actions").addEventListener("submit", function (event) {
+//           event.preventDefault();
 
-          const serviceID = "service_ciih8ow";
-          const templateID = "template_x7j640c";
+//           const serviceID = "service_ciih8ow";
+//           const templateID = "template_x7j640c";
 
-          // send the email here
-          emailjs.sendForm(serviceID, templateID, this).then(
-            (response) => {
-              console.log("SUCCESS!", response.status, response.text);
-              alert("SUCCESS!");
-            },
-            (error) => {
-              console.log("FAILED...", error);
-              alert("FAILED...", error);
-            }
-          );
-        });
+//           // send the email here
+//           emailjs.sendForm(serviceID, templateID, this).then(
+//             (response) => {
+//               console.log("SUCCESS!", response.status, response.text);
+//               alert("SUCCESS!");
+//             },
+//             (error) => {
+//               console.log("FAILED...", error);
+//               alert("FAILED...", error);
+//             }
+//           );
+//         });
 
 
 // Google translate
