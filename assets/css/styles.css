@@ -314,7 +314,7 @@ the website, in dark theme
     margin: 0 5% !important;
   }
 
-  .job__details-pop-up-main, #form-actions {
+  .job__details-pop-up-main, #form-actions, #form-actions2 {
     height: 80vh;
     overflow-y: auto;
   }
