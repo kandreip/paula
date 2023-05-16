@@ -352,6 +352,7 @@ function applyJob () {
         const applyBtns = document.querySelectorAll('.js-product__card-apply-btn');
         const getApplyForm = document.querySelector('.job__apply');
         const modalApplyForm = document.querySelector('.modal')
+        const getJobField = document.querySelector('#job')
         
         
     
@@ -360,6 +361,9 @@ function applyJob () {
             applyBtns[i].addEventListener('click', () =>{
                 // console.log(applyBtns.length)
                 // document.body.classList.add('overlay');
+                console.log(applyBtns[i].parentNode.parentNode.children[1].textContent)
+                getJobField.nextElementSibling.textContent = applyBtns[i].parentNode.parentNode.children[1].textContent;
+                getJobField.nextElementSibling.style.display = 'block';
                 getApplyForm.classList.remove('hide');
                 modalApplyForm.classList.remove('hide')
     
