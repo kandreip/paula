@@ -790,7 +790,7 @@ input.check-toggle-round-flat:checked + label:after {
   column-gap: .5rem;
   border: none;
   background-color: #f25539;
-  color: #ffffff;
+  color: #000000;
 }
 
 .button--link{
