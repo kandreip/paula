@@ -683,9 +683,9 @@ input.check-toggle-round-flat:checked + label:after {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   padding: 40px 0 20px;
 }
 
@@ -987,16 +987,17 @@ input.check-toggle-round-flat:checked + label:after {
 .product__card_location
 {
   height: auto;
-  font-size: var(--small-font-size);
+  font-size: 16px;
   font-weight: 300;
   color: var(--text-color);
-  margin: 1rem 0.25rem 1rem 1rem;
+  margin: 1rem;
+  text-align: center;
 }
 
 
 .product__card_description
 {
-  height: auto;
+  height: 25px;
   font-size: var(--small-font-size);
   font-weight: 300;
   color: var(--text-color);
@@ -1008,6 +1009,12 @@ input.check-toggle-round-flat:checked + label:after {
   margin-bottom: .25rem;
   margin-left: 0.25rem;
   text-align: center;
+  padding: 0 10px;
+  height: 50px;
+}
+
+.fa-map-marker-alt:before{
+  margin-right: 10px;
 }
 
 .product__buttons{
@@ -1309,6 +1316,15 @@ input.check-toggle-round-flat:checked + label:after {
 .footer__information{
   font-size: var(--small-font-size);
   color: var(--text-color);
+}
+
+.footer__information a {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+
+.footer__information a:hover {
+  cursor: pointer;
 }
 
 .footer__information:hover{
@@ -2073,4 +2089,8 @@ textarea.input {
 
 .VIpgJd-ZVi9od-aZ2wEe-wOHMyf {
   display: none;
+}
+
+#goog-gt-tt{
+  display: none !important;
 }

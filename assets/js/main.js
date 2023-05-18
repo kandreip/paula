@@ -181,7 +181,7 @@ function insertProducts (data) {
                         <i class="${f.icon}"></i>
                         <h3 class="product__title">${f.job}</h3>
                         <p class="product__card_location"><i class="fas fa-map-marker-alt"> ${f.location}</i> </p>
-                        <p class="product__card_description"><i class="fas fa-list-ul"></i> </p>
+                        <p class="product__card_description">${f.description} </p>
                         <div class="product__buttons">
                         <button class="product__button1" id=${f.id}>Detalii</button>
                         <button class="product__button2 js-product__card-apply-btn" id=${f.id}>Aplica</button>
@@ -319,26 +319,26 @@ function jobDetails () {
 
         }
 
-        setTimeout(() => {
+        // setTimeout(() => {
 
-            // Generate job details window
-            const applyBtns = document.querySelector('.js-job__details-apply-btn');
-            const getApplyForm = document.querySelector('.job__apply');
+        //     // Generate job details window
+        //     const applyBtns = document.querySelector('.js-job__details-apply-btn');
+        //     const getApplyForm = document.querySelector('.job__apply');
             
-            if (applyBtns !== null) {
-                for (let i=0; i < applyBtns.length; i++) {
+        //     if (applyBtns !== null) {
+        //         for (let i=0; i < applyBtns.length; i++) {
         
-                    applyBtns[i].addEventListener('click', () =>{
-                        // console.log(applyBtns.length)
-                        // document.body.classList.add('overlay');
-                        getApplyForm.classList.remove('hide');
+        //             applyBtns[i].addEventListener('click', () =>{
+        //                 // console.log(applyBtns.length)
+        //                 // document.body.classList.add('overlay');
+        //                 getApplyForm.classList.remove('hide');
             
-                    })
-                }
-            }
+        //             })
+        //         }
+        //     }
             
 
-        }, "1000")
+        // }, "1000")
         
 
     }, "1000")
