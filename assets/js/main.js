@@ -519,6 +519,20 @@ $(document).ready(function(){
 
  });
 
+
+ // Add label for each input for a better accessibility
+
+ setTimeout(() => {
+    $('#goog-gt-votingInputSrcLang').append('<label for="goog-gt-votingInputSrcLang" style="display:none">Test</label>')
+    $('#goog-gt-votingInputTrgLang').append('<label for="goog-gt-votingInputTrgLang" style="display:none">Test2</label>')
+    $('#goog-gt-votingInputSrcText').append('<label for="goog-gt-votingInputSrcText" style="display:none">Test3</label>')
+    $('#goog-gt-votingInputTrgText').append('<label for="goog-gt-votingInputTrgText" style="display:none">Test4</label>')
+    $('#goog-gt-votingInputVote').append('<label for="goog-gt-votingInputVote" style="display:none">Test5</label>')
+
+}, "6000")
+
+ 
+
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
     origin: 'top',
