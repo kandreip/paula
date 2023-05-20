@@ -1504,6 +1504,10 @@ input.check-toggle-round-flat:checked + label:after {
   .footer__subscribe{
     width: initial;
   }
+
+  .job__details-pop-up{
+    top: unset;  
+  }
 }
 
 /* For large devices */
