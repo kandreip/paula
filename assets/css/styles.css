@@ -656,12 +656,17 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .conf-pop-up-main  {
-  padding: 30px 50px;
+  padding: 30px 20px;
 }
 
 .conf-pop-up-close-btn {
   margin: 0 auto 50px;
   display: table;
+}
+
+#checkbox2{
+  width: 32px;
+  height: 32px;
 }
 
 .job__apply {
@@ -684,8 +689,8 @@ input.check-toggle-round-flat:checked + label:after {
   flex-direction: column;
   row-gap: 20px;
   width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   padding: 40px 0 20px;
 }
 
@@ -1507,6 +1512,20 @@ input.check-toggle-round-flat:checked + label:after {
 
   .job__details-pop-up{
     top: unset;  
+  }
+
+  .job__details-content{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .conf-pop-up-main  {
+    padding: 30px 50px;
+  }
+
+  #checkbox2{
+    width: unset;
+    height: unset;
   }
 }
 
