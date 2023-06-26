@@ -59,6 +59,64 @@
             "responsabilities": "<ul><li>Să intrețină zilnic instalațiile de producție pentru lucrări electromecanice și electrice minore;</li><li>Să efectueze mentenanța preventivă a instalațiilor din producție, precum și a instalațiilor generale din fabrică;</li><li>Să urmarească verificarea zilnică a situației echipamentelor cu care lucrează;</li><li>Să efectueze întreținerea regulată pe mașinile de asamblare conform planului de întreținere;</li><li>Să pastreze toate mașinile de asamblare care aparțin de întreținerea generală, curate;</li><li>Să mențină locul de muncă curat.</li></ul>",
             "benefits": "<ul><li>Pachet salarial motivant;</li><li>Oportunitate de dezvoltare în carieră;</li><li>Mediu de lucru placut.</li></ul>",
             "icon": "fas fa-hard-hat"
+        },
+        {
+            "id": 6,
+            "job": "OPERATOR CALITATE FLUX",
+            "location": "Sibiu",
+            "description": "Loc de munca in Sibiu..",
+            "requirements": "<ul><li>Absolvent de studii gimnaziale (8 clase);</li><li>Atentie la detalii;</li><li>Acuitate vizuala;</li><li>Experienta in domeniul calitatii reprezinta un avantaj;</li></ul>",
+            "responsabilities": "<ul><li>Controlul reperelor din punct de vedere al calitatii</li><li>Respingerea pieselor care nu indeplinesc standardele de calitate</li><li>Intocmirea rapoartelor de lucru.</li></ul>",
+            "benefits": "<ul><li>Pachet salarial motivant;</li><li>Prime de sarbatori;</li><li>Spor de noapte 25%;</li><li>Bonus lunar de performanta</li><li>Transport asigurat/decontat;</li><li>Asigurare de sanatate full</li><li>Conditii bune de munca.</li></ul>",
+            "icon": "fas fa-hard-hat"
+        },
+        {
+            "id": 7,
+            "job": "LUCRATOR COMERCIAL",
+            "location": "Sebes si Sibiu",
+            "description": "Loc de munca in Sebes si Sibiu..",
+            "requirements": "<ul><li>Excelente abilitati de comunicare si negociere;</li><li>Foarte buna cunoastere a procesului de vanzare B2B;</li><li>Studii superioare, de preferat tehnice;</li><li>Cunoasterea pietei specifice si a produselor;</li><li>Abilitate de operare in Microsoft Office;</li><li>Experienta de minim 2 ani pe o pozitie similara;</li><li>Abilitati de analiza si sinteza;</li><li>Energie, dorinta de dezvoltare, perseverenta;</li><li>Etica si responsabilitate in munca;</li><li>Capacitate de lucru in echipa.</li><li>Promovarea si vanzarea produselor din portofoliu;</li><li>Gestionarea relatiei cu clientii si partenerii existenti in zona alocata;</li><li>Identificarea de noi oportunitati;</li><li>Cresterea sustenabila a portofoliului de clienti;</li><li>Implementarea politicilor companiei referitoare la vanzari si marketing si asigurarea respectarii acestora;</li><li>Promovarea imaginii companiei in zona de responsabilitate;</li><li>Colectarea si analiza informatiilor relevante din piata.</li></ul>",
+            "benefits": "<ul><li>Salariu motivant;</li><li>Bonus lunar;</li><li>Bonus anual;</li><li>Tichete de masa;</li></ul>",
+            "icon": "fas fa-hard-hat"
+        },
+        {
+            "id": 8,
+            "job": "PATISER",
+            "location": "Sebes si Sibiu",
+            "description": "Loc de munca in Sebes si Sibiu..",
+            "requirements": "<ul><li>Diploma de absolvire liceu/Scoala profesionala;</li><li>Ideal Certificat cofetar, arte culinare, patiserie, brutarie sau experienta de peste 2 ani în HORECA sau laborator cofetarie/patiserie ca si patiser, cofetar, ciocolatier sau brutar;</li><li>Cunoasterea tehnicilor de coacere si a procesului de fabricare a produselor de patiserie. </li><li>Abilitate creativa si pricepere artistica în decorarea prajiturilor si a altor deserturi. </li><li>Atentie la detalii. </li><li>Cunoasterea aprofundata a principiilor de igiena, prepararea deserturilor, a alimentelor si nutritie. </li><li>Program de lucru flexibil, inclusiv weekend-uri, când este necesar. </li><li>Capabil sa lucreze într-un mediu de productie cu ritm rapid. </li></ul>",
+            "responsabilities": "<ul><li>Operarea si gestionarea laboratorului de patiserie si colaborarea cu directorul adjunct de productie pentru a asigura un mediu de lucru de succes;</li><li>Pregatirea ingredientelor si operarea echipamentelor de coacere si a altor echipamente de laborator de cofetarie.</li><li>Crearea de produse de patiserie, de brutarie si de cofetarie, urmând o retetarul.</li><li>Dezvoltarea de noi re?ete pentru portofoliul sezonier.</li><li>Decoratiuni produse de patiserie si deserturi pentru a asigura o prezentare frumoasa si cu gust.</li><li>Asigurarea ca sectiunea lor de productie respecta reglementarile de securitate si sanatate.</li><li>Supravegherea si instruirea membrilor personalului, atunci când este nevoie.</li></ul>",
+            "benefits": "<ul><li>Salariu motivant;</li><li>Mediu de lucru placut.</li></ul>",
+            "icon": "fas fa-hard-hat"
+        },
+        {
+            "id": 9,
+            "job": "OPERATOR CNC",
+            "location": "Sebes si Sibiu",
+            "description": "Loc de munca in Sebes si Sibiu..",
+            "requirements": "<ul><li>Bune cunoștinte tehnice: desen tehnic, materiale, procese dе prelucrare a materialelor;</li><li>Bune cunoștinte operare/programare strung/freză 4 axe CNC;</li><li>Bune cunoștinte operare în diverse sisteme (ex: Siemens, Fanuc Heidenhain, s.a.)</li><li>Studii medii;</li><li>Experienta în proces/producție minim 1 an;</li><li>Disponibilitate pentru lucru în schimburi;</li><li>Curs CNC - constituie avantaj.</li><li>Persoana foarte motivată;</li><li>Persoana cu o atenție sporită la detalii;</li><li>Persoana interesată/pasionată de tehnologia nouă de prelucrare a metalului;</li><li>Persoana preocupată de a se dezvolta și a învăța permanent.</li></ul>",
+            "responsabilities": "<ul><li>Aprovizionarea locului de muncă cu materiale și semifabricate;</li><li>Realizare setup utilaje CNC;</li><li>Asigurarea funcționării mașinilor-unelte cu comandă numerică;</li><li>Realizarea produselor conform specificațiilor: desen tehnic, procedura de fabricație, cu respectarea timpilor de lucru stabiliți;</li><li>Menținerea ordinii și curățeniei în spațiul de lucru.</li></ul>",
+            "benefits": "<ul><li>Posibilități de formare și dezvoltare profesională;</li><li>Bonusuri de productivitate;</li><li>Prime de sărbători;</li><li>Tichete de masă;</li><li>Condiții bune de muncă;</li><li>Lucru cu tehnologii și utilaje de ultimă generație.</li></ul>",
+            "icon": "fas fa-hard-hat"
+        },
+        {
+            "id": 10,
+            "job": "DESENATOR TEHNIC",
+            "location": "Sebes",
+            "description": "Loc de munca in Sebes..",
+            "requirements": "<ul><li>întocmirea pieselor desenate (planșelor) cu ajutorul programului AutoCAD</li><li>cunoașterea și utilizarea la nivel avansat a programelor : AutoCAD și Microsoft Office (Word, Excel) </li><li>respectarea termenelor de predare a proiectului </li><li>abilități de completare a cunoștințelor în termen scurt </li><li>comunicativ cu conducerea și colectivul de colegi</li><li>ambițios, consecvent, ordonat </li><li>amabil, respectos și cu aptitudini de integrare rapidă în colectiv</li></ul>",
+            "benefits": "<ul><li>Program de lucru pe un singur schimb;</li><li>salariul este stabilit de comun acord la angajare.</li></ul>",
+            "icon": "fas fa-hard-hat"
+        },
+        {
+            "id": 11,
+            "job": "INGINER CALITATE",
+            "location": "Sibiu",
+            "description": "Loc de munca in Sebes..",
+            "requirements": "<ul><li>absolvent de studii superioare tehnice;</li><li>experienta anterioara intr-o pozitie similara de minimum 2 ani; experienta in industria auto constituie un avantaj.</li><li>cunostinte specifice standardului ISO 9001;</li><li>excelente cunostinte de operare PC; limba engleza - nivel avansat;</li><li>persoana organizata, loiala, corecta, cu abilitati de conducere a colectivului de lucru din subordine si spirit de echipa;</li><li>permis de conducere categoria B.</li></ul>",
+            "responsabilities": "<ul><li>Definirea proceselor pentru controlul si asigurarea calitatii in colaborare cu celelalte departamentele;</li><li>Urmarirea si asigurarea calitatii produselor;</li><li>Implementarea actiunilor corective si preventive;</li><li>Implementarea si dezvoltarea sistemului de calitate conform standardului ISO 9001;</li><li>Coordonarea personalului din subordinea sa in vederea atingerii obiectivelor departamentului.</li></ul>",
+            "benefits": "<ul><li>Salariu motivant;</li><li>Asigurare medicala privata;</li><li>Mediu de lucru la standarde europene, traininguri de specialiatate.</li></ul>",
+            "icon": "fas fa-hard-hat"
         }
     ]
 }

@@ -224,13 +224,34 @@ function insertProducts (data) {
 // insertProducts ();
 
 // Pagination
-$('.page-2').hide();
-$('.page-1-btn,.page-2-btn').click(function(){
-    $('.page-1,.page-2').toggle();
-    $('.page-1-btn,.page-2-btn').toggleClass('active');
-    // insertProducts();
-    populate();
-});
+
+// $('.page').each(function(){
+//     $(this).hide()
+// })
+// $('.page-1').show();
+$('.page-btn').each(function(){
+    $(this).on("click", function(){
+        $('.active').each(function(){
+            $(this).removeClass('active')
+        })
+
+        $(this).addClass('active')
+
+        $('.active-container').each(function(){
+            $(this).removeClass('active-container')
+        })
+
+        $(`.page-${$(this).attr('id')}`).addClass('active-container')
+        populate();
+    })
+
+})
+// $('.page-1-btn,.page-2-btn').click(function(){
+//     $('.page-1,.page-2').toggle();
+//     $('.page-1-btn,.page-2-btn').toggleClass('active');
+//     // insertProducts();
+//     populate();
+// });
 
 // Adding jobs when click on menu tab - jobs
 $('.js-nav-item-job').click(function(){
@@ -256,36 +277,65 @@ function jobDetails () {
                 let currentBtnId = detailsBtn[i].id;
     
                 $.getJSON("products.json", function (data) {
-    
-                        jobDetails.innerHTML = `
-                        <div class="job__details-content">
-                                <div class="job__details-title">
-                                    <p>Titlul Jobului</p>
-                                    ${data.jobs[detailsBtn[i].id].job}
-                                </div>
-                                <div class="job__details-location">
-                                <p>Locatie</p>
-                                ${data.jobs[detailsBtn[i].id].location}
-                                </div>
-                                
-                                <div class="job__details-requirements">
-                                <p>Cerinte</p>
-                                ${data.jobs[detailsBtn[i].id].requirements}
-                                </div>
 
-                                <div class="job__details-description">
-                                <p>Responsabilitati</p>
-                                ${data.jobs[detailsBtn[i].id].responsabilities}
-                                </div>
+                        if (data.jobs[detailsBtn[i].id].responsabilities !== undefined) {
+                            jobDetails.innerHTML = `
+                                <div class="job__details-content">
+                                        <div class="job__details-title">
+                                            <p>Titlul Jobului</p>
+                                            ${data.jobs[detailsBtn[i].id].job}
+                                        </div>
+                                        <div class="job__details-location">
+                                        <p>Locatie</p>
+                                        ${data.jobs[detailsBtn[i].id].location}
+                                        </div>
+                                        
+                                        <div class="job__details-requirements">
+                                        <p>Cerinte</p>
+                                        ${data.jobs[detailsBtn[i].id].requirements}
+                                        </div>
 
-                                <div class="job__details-benefits">
-                                <p>Beneficii</p>
-                                ${data.jobs[detailsBtn[i].id].benefits}
-                                </div>
-                        </div> 
-                        <div class="job__details-apply-btn"><button class="button--flex js-job__details-apply-btn">Aplica</button></div>
+                                        <div class="job__details-description">
+                                        <p>Responsabilitati</p>
+                                        ${data.jobs[detailsBtn[i].id].responsabilities}
+                                        </div>
+
+                                        <div class="job__details-benefits">
+                                        <p>Beneficii</p>
+                                        ${data.jobs[detailsBtn[i].id].benefits}
+                                        </div>
+                                </div> 
+                                <div class="job__details-apply-btn"><button class="button--flex js-job__details-apply-btn">Aplica</button></div>
     
-                        `
+                             `
+                        } else {
+                            jobDetails.innerHTML = `
+                                <div class="job__details-content">
+                                        <div class="job__details-title">
+                                            <p>Titlul Jobului</p>
+                                            ${data.jobs[detailsBtn[i].id].job}
+                                        </div>
+                                        <div class="job__details-location">
+                                        <p>Locatie</p>
+                                        ${data.jobs[detailsBtn[i].id].location}
+                                        </div>
+                                        
+                                        <div class="job__details-requirements">
+                                        <p>Cerinte</p>
+                                        ${data.jobs[detailsBtn[i].id].requirements}
+                                        </div>
+
+                                        <div class="job__details-benefits">
+                                        <p>Beneficii</p>
+                                        ${data.jobs[detailsBtn[i].id].benefits}
+                                        </div>
+                                </div> 
+                                <div class="job__details-apply-btn"><button class="button--flex js-job__details-apply-btn">Aplica</button></div>
+    
+                             `
+                        }
+    
+                        
                 })
     
                 // getHeader.classList.add('hide');
