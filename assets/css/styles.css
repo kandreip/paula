@@ -1978,6 +1978,15 @@ textarea.input {
 
 
 @media (max-width: 850px) {
+
+  .home{
+    padding: 6rem 1rem;
+  }
+
+  .about, .steps, .products, .contact{
+    padding: 5rem 1rem;
+  }
+
   .form {
     grid-template-columns: 1fr;
     width: 90%;
