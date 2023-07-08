@@ -412,8 +412,13 @@ function applyJob () {
                 // console.log(applyBtns.length)
                 // document.body.classList.add('overlay');
                 console.log(applyBtns[i].parentNode.parentNode.children[1].textContent)
-                getJobField.nextElementSibling.textContent = applyBtns[i].parentNode.parentNode.children[1].textContent;
-                getJobField.nextElementSibling.style.display = 'block';
+                // getJobField.nextElementSibling.textContent = applyBtns[i].parentNode.parentNode.children[1].textContent;
+                // getJobField.nextElementSibling.style.display = 'block';
+                getJobField.nextElementSibling.disabled = true;
+                // getJobField.textContent = applyBtns[i].parentNode.parentNode.children[1].textContent;
+                getJobField.style.display = 'block';
+                getJobField.disabled = true;
+                getJobField.value = applyBtns[i].parentNode.parentNode.children[1].textContent;
                 getApplyForm.classList.remove('hide');
                 modalApplyForm.classList.remove('hide')
     

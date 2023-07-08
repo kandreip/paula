@@ -115,7 +115,8 @@
       <div class="job__apply-close">
         <i class="js-job__apply-close fa fa-close"></i>
       </div>
-      <form id="form-actions" autocomplete="off" action="https://formsubmit.co/b619ab1fad704a7f770f5a4d01d9a3ce" method="POST">
+      <!-- <form id="form-actions" autocomplete="off" action="https://formsubmit.co/b619ab1fad704a7f770f5a4d01d9a3ce" method="POST"> -->
+      <form id="form-actions" autocomplete="off" action="job.php" method="POST">
         <h3 class="title">Aplica</h3>
         <div class="input-container job__apply-job">
           <input type="text" name="job" class="input" id="job" >
@@ -650,27 +651,27 @@
               <!-- <span class="circle one"></span>
                         <span class="circle two"></span> -->
 
-              <form id="form-actions2" autocomplete="off" action="https://formsubmit.co/b619ab1fad704a7f770f5a4d01d9a3ce" method="POST">
-              <!-- <form id="form-actions2" autocomplete="off" action="mail.php" method="POST"> -->
+              <!-- <form id="form-actions2" autocomplete="off" action="https://formsubmit.co/b619ab1fad704a7f770f5a4d01d9a3ce" method="POST"> -->
+              <form id="form-actions2" autocomplete="off" action="mail.php" method="POST">
                 <!-- <h3 class="title">Contacteaza-ne</h3> -->
                 <div class="input-container">
                   <label for="name2">Nume si Prenume*</label>
-                  <input type="text" name="name" class="input" id="name2" >
+                  <input type="text" name="name-contact" class="input" id="name2" >
                   <span>Nume si Prenume*</span>
                 </div>
                 <div class="input-container">
                   <label for="email2">Email*</label>
-                  <input type="email" name="email" class="input" id="email2" >
+                  <input type="email" name="email-contact" class="input" id="email2" >
                   <span>Email*</span>
                 </div>
                 <div class="input-container">
                   <label for="phone2">Telefon*</label>
-                  <input type="tel" name="phone" class="input" id="phone2" required >
+                  <input type="tel" name="phone-contact" class="input" id="phone2" required >
                   <span>Telefon*</span>
                 </div>
                 <div class="input-container textarea">
                   <label for="message2">Mesajul dumneavoastra</label>
-                  <textarea name="message" class="input" id="message2"></textarea>
+                  <textarea name="message-contact" class="input" id="message2"></textarea>
                   <span>Mesajul dumneavoastra</span>
                 </div>
                 <div class="input-container checkbox">
@@ -678,7 +679,7 @@
                   <input type="checkbox" id="checkbox" class="checkbox" >
                   <div class="checkbox-text">Sunt de acord cu <a href="#" class="js-data-protection">politica de prelucrare a datelor cu caracter personal.</a></div>
                 </div>
-                <input type="submit" value="Trimite" class="btn" id="btn2" >
+                <input type="submit" value="Trimite" class="btn" id="btn2" name="submit-form">
               </form>
 
               <!-- <div class="container">
